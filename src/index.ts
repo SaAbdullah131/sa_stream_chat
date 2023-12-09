@@ -21,6 +21,9 @@ interface User {
 }
 const USERS:User[]=[];
 
+app.get('/',(req,res)=>{
+    res.send(`Welcome to Sa Chat Server`);
+})
 
 //routes
 app.post('/register',async(req,res)=>{
